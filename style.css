@@ -6,19 +6,23 @@ body {
 header {
     display: grid;
     align-items: center;
-    background-image: url(./images/banner.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: fit-content;
     text-align: center;
     padding: 1rem 0;
+    background-color: goldenrod;
 }
 
 h1 {
-    color: antiquewhite;
-    font-size: clamp(2rem, 6vw, 4rem);
-    font-weight: 800;
+    background-image: url("https://previews.123rf.com/images/lisaanfisa/lisaanfisa1603/lisaanfisa160300016/55484467-seamless-dans-le-style-fran%C3%A7ais-avec-de-la-nourriture-contexte-pour-le-menu-une-caf%C3%A9t%C3%A9ria-un-caf%C3%A9-un.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* color: antiquewhite; */
+    font-size: clamp(4rem, 8vw, 7rem);
+    font-weight: 900;
     background-color: black;
     margin: 0 .75em;
     padding: .25em 0;
@@ -28,6 +32,11 @@ h2 {
     margin: 1rem 3rem;
     padding-left: .5rem;
     background-color: antiquewhite;
+}
+
+p {
+    line-height: 1.5;
+    /* letter-spacing: ; */
 }
 
 article {
@@ -42,8 +51,6 @@ section {
     align-items: center;
     width: 42vw;
 }
-
-section:hover 
 
 h3 {
     justify-content: space-between;
