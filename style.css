@@ -34,33 +34,83 @@ h2 {
     background-color: antiquewhite;
 }
 
-p {
+li {
     line-height: 1.5;
     /* letter-spacing: ; */
 }
 
 article {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 1rem 3rem;
+    display: grid;
     justify-content: center;
 }
 
 section {
     display: flex;
     align-items: center;
-    width: 42vw;
+    width: 60vw;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+section:hover {
+    color: goldenrod;
 }
 
 h3 {
     justify-content: space-between;
 }
 
-.description,
-.price {
-    display: none;
-}
-
 .details {
     margin-left: 2em;
+}
+
+.choices li {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 0 .5rem;
+    cursor: pointer;
+}
+
+.choices li:hover {
+    transform: scale(1.5);
+}
+
+#story-icon {
+    background-image: url(images/fairy.png);
+    transition: transform 0.3s ease-in;
+}
+#story-icon:hover {
+    background-image: url(images/gifs/fairy.gif);
+    transform: scale(1.8);
+}
+
+#future-icon {
+    background-image: url(images/future.png);
+}
+#future-icon:hover {
+    background-image: url(images/gifs/future.gif);
+}
+
+#globe-icon {
+    background-image: url(images/globe.png);
+}
+#globe-icon:hover {
+    background-image: url(images/gifs/globe.gif);
+}
+
+#memories-icon {
+    background-image: url(images/memory.png);
+}
+#memories-icon:hover {
+    background-image: url(images/gifs/memory.gif);
+}
+
+#teen-life-icon {
+    background-image: url(images/me.png);
+}
+#teen-life-icon:hover {
+    background-image: url(images/gifs/me.gif);
 }
