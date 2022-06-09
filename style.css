@@ -80,6 +80,7 @@ h3 {
     transform: scale(1.5);
 }
 
+/* change images to gifs on hover */
 #story-icon {
     background-image: url(images/fairy.png);
     transition: transform 0.3s ease-in;
